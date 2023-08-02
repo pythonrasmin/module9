@@ -1,4 +1,9 @@
-import wp_func
+# import wp_func
+from wp_func import wp_p
+from wp_func import wp_h2
+from wp_func import wp_h3
+from wp_func import wp_h4
+
 
 heading_one = "This is title"
 
@@ -11,6 +16,6 @@ heading_three = 'Why do we use it?'
 
 third_paragraph = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
 heading_four = "Why do we use it?"
-article = wp_func.wp_p(frist_paragraph) + wp_func.wp_h2(heading_two) + wp_func.wp_p(second_paragraph) + wp_func.wp_h3(heading_three) + wp_func.wp_p(third_paragraph) + wp_func.wp_h4(heading_four)
+article =wp_p(frist_paragraph) +wp_h2(heading_two) + wp_p(second_paragraph) + wp_h3(heading_three) + wp_p(third_paragraph) + wp_h4(heading_four)
 
 print(article)
